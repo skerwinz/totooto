@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+body {
+    font-family: Assistant, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1250px;
+    padding: 0px 20px;
+
+}
+
+
+.header-container {
+    margin: 0 auto;
+    max-width: 1250px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: #252323; /* Color de fondo del header */
+    color: #fff;
+    padding: 0 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+}
+
+.logo-imagen {
+    width: auto; /* Establece el ancho deseado para el logo */
+    height: 100px; /* Mantiene la proporción de aspecto */
+}
+
+/* Establece la altura de la primera sección para que ocupe el 100% de la pantalla */
+#inicio {    
+    padding-top: 35vh;
+    background-color: #70798C;
+    height: 65vh;
+    z-index: -1;
+    overflow: hidden; /* Evita que el video se desborde */
+}
+
+#video-fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajusta el ancho al 100% de la sección */
+    height: 100%; /* Ajusta la altura al 100% de la sección */
+    object-fit: cover; /* Ajusta el tamaño del video para cubrir la sección */
+    background-color: #000; /* Establece el color de fondo a negro */
+    opacity: 0.9; 
+}
+
+/* Ajusta los estilos del título y el párrafo dentro de la primera sección */
+#inicio h1 {
+    color: #F5F1ED;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 70px;
+}
+
+
+#inicio p {
+    color: #F5F1ED;
+    font-size: 20px;
+    padding-top: 150px;
+}
+
+
+section:not(#inicio) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+}
+
+
+#quienes-somos {
+    background-color: #F5F1ED;
+}
+
+#quienes-somos h1 {
+    color: #252323;
+    font-weight: 400px;
+    font-size: 36px;
+}
+
+#quienes-somos .doble {
+    display: flex;
+    padding-right: 10px;
+
+}
+
+#quienes-somos .doble p {
+    display: inline-block; /* Coloca los elementos en línea uno al lado del otro */
+    margin-right: 10px; 
+    color: #252323;
+    font-size: 18px;
+
+}
+
+#contacto {
+    color: #F5F1ED;
+    background-color: #A99985;
+}
+
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #70798C;
+}
+
+footer p{
+    color: white;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .footer-columns .column {
+    padding-right: 10px;
+    width: 400px;
+    
+  }
+
+.sitemap a {
+    padding: 40px 0px;
+    margin-right: 15px;
+}
+
+
+.social-media a {
+    margin-right: 15px;
+}
+
+  /* Estilo para los enlaces (links) y listas (ul) dentro del footer */
+/* Estilo para los enlaces (links) dentro del footer */
+.footer-columns a {
+    color: white; /* Color del texto blanco */
+    text-decoration: none; /* Quita el subrayado en los enlaces */
+}
+
+/* Estilo para los encabezados h3 dentro del footer */
+.footer-columns h3 {
+    color: white; /* Color del texto blanco */
+}
+/* Estilos para el contenedor del texto infinito */
+
+
+/* Estilos para la versión móvil */
+@media (max-width: 767px) {
+    .container {
+        padding: 0px 25px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .logo-imagen {
+        margin: 0;
+        width: auto;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #inicio {    
+        padding-top: 35vh;
+        background-color: #70798C;
+        height: 55vh;
+        z-index: -1;
+        overflow: hidden; /* Evita que el video se desborde */
+    }
+
+    #video-fondo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; /* Ajusta el ancho al 100% de la sección */
+        height: 90%; /* Ajusta la altura al 100% de la sección */
+        object-fit: cover; /* Ajusta el tamaño del video para cubrir la sección */
+        background-color: #000; /* Establece el color de fondo a negro */
+        opacity: 0.9; 
+    }
+    
+    #quienes-somos .doble p {
+        display: inline-block; /* Coloca los elementos en línea uno al lado del otro */
+        padding-right: 20px; 
+        color: #252323;
+        font-size: 18px;
+    
+    }
+
+    
+
+    #inicio h1 {
+        font-size: 40px;
+    }
+
+    #inicio p {
+        color: #F5F1ED;
+        font-size: 20px;
+        padding-top: 90px;
+    }
+    
+
+    .footer-columns {
+        display: flex;
+        flex-direction: column;
+        
+      }
+
+      .sitemap h3 {
+        padding-left: 0px;
+     }
+     
+     .social-media h3{
+         padding-left: 0px;
+         
+     }
+
+     
+     .sitemap a {
+        margin-right: 30px;
+     }
+     
+     .social-media h3{
+         padding-left: 0px;
+         
+     }
+
+     .column {
+        padding-bottom: 10px;
+     }
+    
+     .column .sitemap{
+        padding-bottom: 12px;
+     }
+
+     .column .social-media{
+        padding-bottom: 12px;
+     }
+    
+
+
+
+        }
